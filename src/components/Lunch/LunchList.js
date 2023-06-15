@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BreakfastList = (props) => {
+const LunchList = (props) => {
   const item = props.item;
   return (
     <div style={{ border: '1px solid red', padding: '10px', margin: '60px', borderRadius: '10px', height: '300px', width: '300px' }}>
@@ -12,4 +12,4 @@ const BreakfastList = (props) => {
   );
 };
 
-export default BreakfastList;
+export default LunchList;

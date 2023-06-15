@@ -25,12 +25,12 @@ const Login = () => {
             </label>
           </div>
 
-          <div class="container" style={{backgroundColor:"#f1f1f1", padding:'10px', margin:'10px'}}>
+          <div class="container" style={{backgroundColor:"#f1f1f1", padding:'16px', margin:'0 101.5px', height:'100px'}}>
             <button type="button" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
-</form>
-    
+      </form>
+
     </>
 
   );

@@ -1,5 +1,4 @@
 import './App.css';
-import Home from './components/Home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Lunch from './components/Lunch/Lunch';
@@ -9,9 +8,9 @@ import Footer from './components/Footer/Footer';
 import Header2 from './components/Header2/Header2';
 import NavFood from './components/NavFood/NavFood';
 import CheckOutButton from './components/CheckOutButton/CheckOutButton';
-import CheckoutHandle from './components/CheckoutHandle/CheckoutHandle';
 import SignUp from './components/SignUp/SignUp';
 import Login from './components/Login/Login';
+import Checkout from './components/CheckoutHandle/Checkout';
 
 function App() {
   return (
@@ -21,14 +20,16 @@ function App() {
         {/* <Header2></Header2> */}
         <NavFood></NavFood>
         <Routes>
+          <Route element={<Lunch></Lunch>} path='/'></Route>
+          <Route element={<Lunch></Lunch>} path='/home'></Route>
           <Route element={<Lunch></Lunch>} path='/lunch'></Route>
           <Route element={<Dinner></Dinner>} path='/dinner'></Route>
           <Route element={<Breakfast></Breakfast>} path='/breakfast'></Route>
-          <Route element={<CheckoutHandle></CheckoutHandle>} path='/checkout'></Route>
+          <Route element={<Checkout></Checkout>} path='/checkout'></Route>
           <Route element={<SignUp></SignUp>} path='/signup'></Route>
           <Route element={<Login></Login>} path='/login'></Route>
         </Routes>
-        {/* <CheckOutButton></CheckOutButton> */}
+        <CheckOutButton></CheckOutButton>
         <Footer></Footer>
       </BrowserRouter>
     </div>

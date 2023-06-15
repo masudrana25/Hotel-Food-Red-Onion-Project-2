@@ -1,13 +1,14 @@
 import React from 'react';
 import './NavFood.css';
+import { Link } from 'react-router-dom';
 
 const NavFood = () => {
   return (
     <div className='aa'>
       <p>
-        <a href="/breakfast">Breakfast</a>
-        <a href="/lunch">Lunch</a>
-        <a href="/dinner">Dinner</a>
+        <Link to='/breakfast'>Breakfast</Link>
+        <Link to="/lunch">Lunch</Link>
+        <Link to="/dinner">Dinner</Link>
       </p>
     </div>
   );

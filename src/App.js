@@ -16,11 +16,10 @@ function App() {
         <Header></Header>
         <Header2></Header2>
         <NavFood></NavFood>
-        <Dinner></Dinner>
         <Routes>
-          <Route element={Lunch} path='/lunch'></Route>
-          <Route element={Dinner} path='/dinner'></Route>
-          <Route element={Breakfast} path='/breakfast'></Route>
+          <Route element={<Lunch></Lunch>} path='/lunch'></Route>
+          <Route element={<Dinner></Dinner>} path='/dinner'></Route>
+          <Route element={<Breakfast></Breakfast>} path='/breakfast'></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
